@@ -249,8 +249,7 @@ public class AddToDoFragment extends AppDefaultFragment implements DatePickerDia
                 });
 
 
-//        String lastSeen = formatDate(DATE_FORMAT, mLastEdited);
-//        mLastSeenTextView.setText(String.format(getResources().getString(R.string.last_edited), lastSeen));
+
 
         setEnterDateLayoutVisible(mToDoDateSwitch.isChecked());
 
@@ -357,60 +356,7 @@ public class AddToDoFragment extends AppDefaultFragment implements DatePickerDia
 //        mDefaultTimeOptions24H = new String[]{"9:00", "12:00", "15:00", "18:00", "21:00", "24:00"};
         setDateAndTimeEditText();
 
-//
 
-//        mChooseDateButton = (Button)findViewById(R.id.newToDoChooseDateButton);
-//        mChooseTimeButton = (Button)findViewById(R.id.newToDoChooseTimeButton);
-//
-//        mChooseDateButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Date date;
-//                hideKeyboard(mToDoTextBodyEditText);
-//                if(mUserToDoItem.getToDoDate()!=null){
-//                    date = mUserToDoItem.getToDoDate();
-//                }
-//                else{
-//                    date = new Date();
-//                }
-//                Calendar calendar = Calendar.getInstance();
-//                calendar.setTime(date);
-//                int year = calendar.get(Calendar.YEAR);
-//                int month = calendar.get(Calendar.MONTH);
-//                int day = calendar.get(Calendar.DAY_OF_MONTH);
-//
-//
-//                DatePickerDialog datePickerDialog = DatePickerDialog.newInstance(AddToDoActivity.this, year, month, day);
-//                if(theme.equals(MainActivity.DARKTHEME)){
-//                    datePickerDialog.setThemeDark(true);
-//                }
-//                datePickerDialog.show(getFragmentManager(), "DateFragment");
-//            }
-//        });
-//
-//        mChooseTimeButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Date date;
-//                hideKeyboard(mToDoTextBodyEditText);
-//                if(mUserToDoItem.getToDoDate()!=null){
-//                    date = mUserToDoItem.getToDoDate();
-//                }
-//                else{
-//                    date = new Date();
-//                }
-//                Calendar calendar = Calendar.getInstance();
-//                calendar.setTime(date);
-//                int hour = calendar.get(Calendar.HOUR_OF_DAY);
-//                int minute = calendar.get(Calendar.MINUTE);
-//
-//                TimePickerDialog timePickerDialog = TimePickerDialog.newInstance(AddToDoActivity.this, hour, minute, DateFormat.is24HourFormat(AddToDoActivity.this));
-//                if(theme.equals(MainActivity.DARKTHEME)){
-//                    timePickerDialog.setThemeDark(true);
-//                }
-//                timePickerDialog.show(getFragmentManager(), "TimeFragment");
-//            }
-//        });
 
     }
 
